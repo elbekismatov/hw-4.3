@@ -1,0 +1,406 @@
+@import "./reset";
+body {
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 1190px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 40px 83px;
+    button {
+      padding: 16px 26px;
+      border: none;
+      border-radius: 10px;
+      width: 175px;
+      background: #e8eff2;
+
+      a {
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 26px;
+        color: #162542;
+      }
+      cursor: pointer;
+      &:hover {
+        background: #162542;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.typemaster-section {
+  background-image: url(../../img/right-pattern.png);
+  background-position-x: right;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .table-img{
+    display: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .information {
+      max-width: 445px;
+      h2 {
+        font-family: Barlow;
+        font-size: 56px;
+        font-weight: 900;
+        line-height: 56px;
+        text-align: left;
+        color: #162542;
+        margin-bottom: 24px;
+      }
+      p {
+        font-family: Barlow;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        color: #7b8bad;
+        margin-bottom: 40px;
+      }
+      .about {
+        max-width: 342px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button {
+          width: 175px;
+          background: #f16718;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          padding: 16px 27px;
+          &:hover {
+            opacity: 70%;
+          }
+          a {
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            text-align: left;
+            color: #ffffff;
+          }
+        }
+        p {
+          margin: 0;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.mechanical-section {
+  background-image: url(../../img/left-pattern.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 168px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img {
+      display: flex;
+      max-width: 730px;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .informations {
+      max-width: 255px;
+      h2 {
+        font-family: Barlow;
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 36px;
+        text-align: left;
+        color: #162542;
+        margin-bottom: 27px;
+      }
+      p {
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        color: #7b8bad;
+      }
+    }
+  }
+}
+.information {
+  margin-bottom: 126px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .parts {
+      max-width: 255px;
+      img {
+        margin-bottom: 46px;
+      }
+      h3 {
+        font-family: Barlow;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        text-align: left;
+        color: #162542;
+        margin-bottom: 24px;
+        max-width: 200px;
+      }
+      p {
+        font-family: Barlow;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        color: #7b8bad;
+      }
+    }
+  }
+}
+footer {
+  margin-bottom: 39px;
+  .container {
+    display: flex;
+    justify-content: center;
+    ul {
+      li {
+        a {
+          font-family: Barlow;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 26px;
+          text-align: left;
+          color: #7b8bad;
+          span {
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1110px) {
+  .container {
+    width: 100%;
+    max-width: 780px;
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+  header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 24px 62px;
+      button {
+        padding: 16px 26px;
+        border: none;
+        border-radius: 10px;
+        width: 175px;
+        background: #e8eff2;
+  
+        a {
+          font-family: Barlow;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 26px;
+          color: #162542;
+        }
+        cursor: pointer;
+        &:hover {
+          background: #162542;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  .typemaster-section {
+    background-image:none;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .desktop-keyboard{
+      display: none;
+    }
+    .table-img{
+      display: block;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .information {
+        max-width: 339px;
+        h2 {
+          font-size: 48px;
+          line-height: 48px;
+          margin-bottom: 34px;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 39px;
+        }
+        .about {
+          max-width: 342px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          button {
+            width: 175px;
+            background: #f16718;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 16px 27px;
+            &:hover {
+              opacity: 70%;
+            }
+            a {
+              font-family: Barlow;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 26px;
+              text-align: left;
+              color: #ffffff;
+            }
+          }
+          p {
+            margin: 0;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .mechanical-section {
+    background-image:none;
+    margin-bottom: 142px;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .img {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+ margin-bottom: 72px;
+      }
+      .informations {
+        width: 100%;
+        max-width: 639px;
+       display: grid;
+       justify-content: space-between;
+       gap: 36px;
+       grid-template-columns: 255px 398px;
+       align-items: center;
+    
+        h2 {
+          font-family: Barlow;
+          font-size: 32px;
+          font-weight: 900;
+          line-height: 36px;
+          text-align: left;
+          color: #162542;
+          margin-bottom: 0px;
+          text-align: start;
+          max-width: 255px;
+        }
+        p {
+          font-family: Barlow;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 26px;
+          text-align: left;
+          color: #7b8bad;
+          max-width: 1fr;
+        }
+      }
+    }
+  }
+  .information {
+    margin-bottom: 142px;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 72px;
+      .parts {
+        max-width: 255px;
+        img {
+          margin-bottom: 46px;
+        }
+        h3 {
+          font-family: Barlow;
+          font-size: 24px;
+          font-weight: 900;
+          line-height: 28px;
+          text-align: left;
+          color: #162542;
+          margin-bottom: 24px;
+          max-width: 200px;
+        }
+        p {
+          font-family: Barlow;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 26px;
+          text-align: left;
+          color: #7b8bad;
+        }
+      }
+    }
+  }
+  footer {
+    margin-bottom: 39px;
+    .container {
+      display: flex;
+      justify-content: center;
+      ul {
+        li {
+          a {
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 26px;
+            text-align: left;
+            color: #7b8bad;
+            span {
+              font-family: Barlow;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
